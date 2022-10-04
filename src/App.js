@@ -1,8 +1,14 @@
+import LoginForm from "./components/LoginForm";
+import React from "react";
 
 function App() {
+  const onSubmit = (formData) => {
+    console.log(formData);
+  };
+
   return (
     <div>
-      Input
+      <LoginForm onSubmit={onSubmit} />
     </div>
   );
 }
